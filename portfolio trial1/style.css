@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: rgb(122, 124, 122);
+}
+/*the nav section*/
+#navBar{
+    background: rgb(80, 79, 79);
+    height: 80px;
+    width:100%;
+}
+#navBar ul{
+    display: flex;
+}
+#navBar li{
+    padding-top: 30px;
+    list-style: none;
+    margin-left: 10%;
+    margin: 0 auto;
+}
+#navBar a{
+    background: rgb(26, 24, 24);
+    padding: 10px;
+    color: rgb(236, 234, 234);
+    text-decoration: none;
+    transition: all 1500ms;
+}
+#navBar a:hover{
+    background: rgb(228, 14, 14);
+    transform: scale(1.2);
+}
+/*the profile section*/
+.profile{
+    display: flex;
+    background: rgb(12, 12, 12);
+    width: 540px;
+    height: 420px;
+    border-radius: 50%;
+    margin:60px;   
+}
+#photo img{
+    height: 400px;
+    width:auto;
+    border-radius:50%;
+    margin-left: 10px;
+    
+    margin-top: 10px;
+}
+/*the intro section*/
+#intro h2{
+    width:500px;
+    color: rgb(12, 12, 12);
+    margin-top: 250px;
+    margin-left: 40px;
+    padding: 10px;
+    font-size: 33px;
+}
+#intro span{
+    color: white;
+}
+#button{
+    height: 40px;
+    margin-left: 50%;
+    width: 150px;
+}
+#button a{
+    color: rgb(128, 128, 128);
+    text-decoration: none;
+    font-size: 25px;
+    padding: 30px;
+}
