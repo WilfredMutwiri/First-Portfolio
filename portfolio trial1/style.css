@@ -3,22 +3,26 @@
     margin: 0;
 }
 body{
-    background: rgb(122, 124, 122);
+    background: rgb(104, 98, 98);
 }
 /*the nav section*/
 #navBar{
     background: rgb(80, 79, 79);
-    height: 80px;
+    height: 50px;
     width:100%;
+    position: fixed;
+    margin-bottom: -100px;
 }
 #navBar ul{
     display: flex;
+
 }
 #navBar li{
-    padding-top: 30px;
+    padding-top: 15px;
     list-style: none;
     margin-left: 10%;
     margin: 0 auto;
+
 }
 #navBar a{
     background: rgb(26, 24, 24);
@@ -26,12 +30,18 @@ body{
     color: rgb(236, 234, 234);
     text-decoration: none;
     transition: all 1500ms;
+
 }
 #navBar a:hover{
     background: rgb(228, 14, 14);
     transform: scale(1.2);
 }
 /*the profile section*/
+.profileContainer{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
 .profile{
     display: flex;
     background: rgb(12, 12, 12);
@@ -52,22 +62,237 @@ body{
 #intro h2{
     width:500px;
     color: rgb(12, 12, 12);
-    margin-top: 250px;
-    margin-left: 40px;
+    margin-top: 100px;
+    margin-left: 30%;
     padding: 10px;
-    font-size: 33px;
+    font-size: 40px;
 }
 #intro span{
     color: white;
 }
 #button{
-    height: 40px;
-    margin-left: 50%;
-    width: 150px;
+    margin-top:40px;
+    height: 10px;
+    margin-left: 40%;
+    width: 200px;
+
 }
 #button a{
-    color: rgb(128, 128, 128);
     text-decoration: none;
     font-size: 25px;
     padding: 30px;
+    border-radius: 50%;
+}
+/*the about section*/ 
+.about{
+    margin-top: 340px;
+    width: 100%;
+    height: 700px;
+    background: rgb(41, 49, 42);
+}
+#abouttxt{
+    background: rgb(16, 22, 16);
+    width: 100%;
+    height: 50px;
+}
+#abouttxt h2{
+    color: rgb(236, 234, 234);
+    margin-left: 50%;
+    padding: 10px;
+}
+#titles{
+    padding: 30px;
+    color: rgb(243, 241, 241);
+    font-size: 23px;
+    font-family: monospace;
+}
+#titles1{
+    color: rgb(247, 8, 8);
+}
+#aboutImg{
+    display: flex;
+    justify-content:space-evenly;
+    margin-bottom: 100px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+#aboutImg img{
+    border-radius: 50%;
+}
+#aboutImg span{
+    color: rgb(243, 14, 14);
+}
+#aboutImg h2,#aboutImg p{
+    background: black;
+    padding: 20px;
+    width: 300px;
+}
+#aboutImg a{
+    background: rgb(5, 5, 241);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+#aboutImg a:hover{
+    background: rgb(245, 4, 4);
+}
+
+/*services section*/
+#services{
+    background-color: rgb(8, 8, 8);
+    color: rgb(255, 255, 255);
+    margin-top: 240px;
+    height: 50px;
+    width: 100%;
+}
+#services h2{
+    color: rgb(236, 234, 234);
+    margin-left: 50%;
+    padding: 10px;
+}
+.servicesContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: rgb(41, 49, 42);
+    padding-top: 30px;
+    height: 500px;
+}
+.servicesContainer h3{
+    color:rgb(235, 18, 18);
+    font-size: 23px;
+    font-family: monospace;
+    background: rgb(14, 13, 13);
+    margin-right: 20px;
+    padding-left: 50px;
+    padding-top: 20px;
+    border-left: 3px solid rgb(255, 0, 0);
+}
+.servicesContainer p{
+    color: rgb(233, 232, 232);
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 20px;
+
+}
+#Software,#Developer,#Designer{
+    margin-right: 20px;
+    height: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#Software p,#Developer p,#Designer p{
+    background: rgb(14, 13, 13);
+    height: 100px;
+    overflow: hidden;
+    margin-bottom: 0px;
+    width: 300px;
+border-left: 3px dashed red;
+
+}
+.button1 button,.button2 button,#Designer button{
+    background: rgb(10, 10, 236);
+    height: 30px;
+    width: 100px;
+    color: rgb(243, 240, 240);
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 30%;
+}
+.button1,.button2,.button3{
+    background: rgb(14, 13, 13);
+    width: 320px;
+    border-left: 3px dashed red;
+
+}
+/*the testimonies section*/
+#testimonies{
+    margin-top: 120px;
+    width: 100%;
+    height: 50px;
+    background:rgb(14, 13, 13) ;
+}
+#testimonies h2{
+    color: rgb(236, 234, 234);
+    padding: 10px;
+    margin-left: 43%;
+}
+#testimoniesContainer{
+    background: rgb(41, 49, 42);
+    height: 300px;
+}
+#testimoniesContainer h3,#testimoniesContainer p{
+    color:rgb(247, 241, 241);
+    font-size: 19px;
+    padding: 20px;
+    margin-left: 100px;
+}
+#testimoniesContainer h3{
+    color:rgb(250, 234, 7);
+}
+.callout{
+    background: rgb(41, 49, 42);
+    margin-top: 200px;
+    height: 200px;
+    color: rgb(245, 239, 239);
+    font-size: 20px;
+}
+#pcall{
+    padding: 20px;
+}
+#pcall button{
+    background: rgb(8, 8, 238);
+    color: rgb(255, 255, 255);
+    width: 70px;
+    height: 25px;
+}
+
+#formCall{
+    opacity: 0;   
+    background: rgb(7, 7, 7);
+    height: 360px;
+    width:500px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+#formCall label{
+    padding-top: 20px;
+    margin-left: 30px;
+}
+#formCall p{
+    padding-left: 20px;
+}
+#formCall a:hover{
+    color: rgb(241, 8, 8);
+}
+#message{
+    width: 250px;
+    padding-bottom: 220px;
+    padding-right: 100px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+#submit{
+    margin-top:20px;
+    margin-left:30px;
+    width: 60px;
+}
+#submit:hover{
+    background:rgb(241, 8, 8);;
+    color: rgb(247, 243, 243);
+}
+footer{
+    display: flex;
+    margin-top: 200px;
+    height: 200px;
+    background: rgb(7, 7, 7);
+    color:rgb(241, 8, 8);
+    font-size: 20px
+}
+footer p{
+    padding: 30px;
+    line-height: 25px;
 }
