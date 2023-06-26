@@ -3,7 +3,9 @@
     margin: 0;
 }
 body{
-    background: rgb(104, 98, 98);
+    background-image: url("images/Screenshot\ 2023-06-26\ 145842.png");
+    background-size:cover;
+    background-repeat:repeat;
 }
 /*the nav section*/
 #navBar{
@@ -30,11 +32,14 @@ body{
     color: rgb(236, 234, 234);
     text-decoration: none;
     transition: all 1500ms;
+    box-shadow: 0 0 30px rgba(252, 249, 249, 0.5);
 
 }
 #navBar a:hover{
     background: rgb(228, 14, 14);
-    transform: scale(1.2);
+    transform:scale(1.2);
+    box-shadow: 0 0 30px rgba(233, 236, 10, 0.5);
+
 }
 /*the profile section*/
 .profileContainer{
@@ -88,10 +93,10 @@ body{
     margin-top: 340px;
     width: 100%;
     height: 700px;
-    background: rgb(41, 49, 42);
+    background: rgb(41, 49, 42,0.6);
 }
 #abouttxt{
-    background: rgb(16, 22, 16);
+    background: rgb(16, 22, 16,0.6);
     width: 100%;
     height: 50px;
 }
@@ -124,7 +129,7 @@ body{
     color: rgb(243, 14, 14);
 }
 #aboutImg h2,#aboutImg p{
-    background: black;
+    background: rgb(10, 10, 10);
     padding: 20px;
     width: 300px;
 }
@@ -140,7 +145,7 @@ body{
 
 /*services section*/
 #services{
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(8, 8, 8,0.6);
     color: rgb(255, 255, 255);
     margin-top: 240px;
     height: 50px;
@@ -157,9 +162,9 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background: rgb(41, 49, 42);
+    background: rgb(41, 49, 42,0.6);
     padding-top: 30px;
-    height: 500px;
+    height: 600px;
 }
 .servicesContainer h3{
     color:rgb(235, 18, 18);
@@ -178,10 +183,21 @@ body{
     margin-right: 20px;
 
 }
+#Software img,#Developer img,#Designer img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 35%;
+}
+#Software figure,#Developer figure,#Designer figure{
+    background:rgb(14, 13, 13);
+    border-left: 3px solid red;
+    width: 320px;
+}
 #Software,#Developer,#Designer{
     margin-right: 20px;
     height: 500px;
-    margin-left: 50px;
     margin-right: 50px;
 }
 #Software p,#Developer p,#Designer p{
@@ -213,7 +229,7 @@ border-left: 3px dashed red;
     margin-top: 120px;
     width: 100%;
     height: 50px;
-    background:rgb(14, 13, 13) ;
+    background:rgb(14, 13, 13,0.6);
 }
 #testimonies h2{
     color: rgb(236, 234, 234);
@@ -221,7 +237,7 @@ border-left: 3px dashed red;
     margin-left: 43%;
 }
 #testimoniesContainer{
-    background: rgb(41, 49, 42);
+    background: rgb(41, 49, 42,0.6);
     height: 300px;
 }
 #testimoniesContainer h3,#testimoniesContainer p{
@@ -234,7 +250,7 @@ border-left: 3px dashed red;
     color:rgb(250, 234, 7);
 }
 .callout{
-    background: rgb(41, 49, 42);
+    background: rgb(41, 49, 42,0.6);
     margin-top: 200px;
     height: 200px;
     color: rgb(245, 239, 239);
@@ -252,7 +268,7 @@ border-left: 3px dashed red;
 
 #formCall{
     opacity: 0;   
-    background: rgb(7, 7, 7);
+    background: rgb(7, 7, 7,0.5);
     height: 360px;
     width:500px;
     margin: 0 auto;
@@ -288,8 +304,8 @@ footer{
     display: flex;
     margin-top: 200px;
     height: 200px;
-    background: rgb(7, 7, 7);
-    color:rgb(241, 8, 8);
+    background: rgb(7, 7, 7,0.8);
+    color:rgb(250, 63, 7);
     font-size: 20px
 }
 footer p{
